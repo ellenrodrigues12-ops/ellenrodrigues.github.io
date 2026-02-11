@@ -20,7 +20,6 @@ body {
     color: var(--texto);
 }
 
-/* CABEÇALHO */
 header {
     background: linear-gradient(135deg, var(--rosa), var(--azul));
     text-align: center;
@@ -43,7 +42,6 @@ header h3 {
     font-size: 16px;
 }
 
-/* SEÇÕES */
 section {
     max-width: 1100px;
     margin: auto;
@@ -61,7 +59,6 @@ h2 {
     color: #5a2d6f;
 }
 
-/* FRASE */
 .frase {
     font-style: italic;
     font-size: 18px;
@@ -70,7 +67,6 @@ h2 {
     text-align: center;
 }
 
-/* SOBRE MIM */
 .sobre-container {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +79,6 @@ h2 {
     border-radius: 20px;
 }
 
-/* LISTAS */
 ul {
     list-style: none;
     padding: 0;
@@ -95,18 +90,38 @@ ul li {
 
 /* BOTÕES */
 .botoes a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin: 10px 10px 0 0;
     padding: 12px 24px;
     border-radius: 30px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .whatsapp { background-color: #25D366; }
 .telefone { background-color: #6a5acd; }
 .instagram { background-color: #C13584; }
+
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
 
 /* RODAPÉ */
 footer {
@@ -133,37 +148,36 @@ footer {
 
 <section class="caixa">
     <h2>Sobre mim</h2>
-
     <div class="sobre-container">
         <img src="logo.png" alt="Logo Ellen Rodrigues">
         <img src="foto.jpg" alt="Foto profissional Ellen Rodrigues">
     </div>
 
     <p>
-        Sou Psicóloga há 8 anos, atendendo sob a abordagem de Orientação Psicanalítica,
-        apaixonada pela minha profissão, onde a mesma me possibilitou atuar também como
-        palestrante, que é mais uma das coisas que amo fazer.
+        Sou psicóloga há 8 anos, atuando sob a abordagem de orientação psicanalítica.
+        Sou apaixonada pela minha profissão, que também me possibilitou atuar como palestrante,
+        algo que também amo fazer.
     </p>
 
     <p>
-        Durante estes anos de experiência, me dediquei a ajudar adolescentes, adultos e idosos,
-        oferecendo um espaço de cuidado, escuta e acolhimento sem julgamentos, com respeito à
-        história, vivências e afetos de cada paciente, disponibilizando um lugar seguro para
-        falar, sentir e se reorganizar emocionalmente.
+        Durante esses anos de experiência, dediquei-me a ajudar adolescentes, adultos e idosos,
+        oferecendo um espaço de cuidado, escuta e acolhimento sem julgamentos,
+        com respeito à história, vivências e afetos de cada paciente,
+        disponibilizando um lugar seguro para falar, sentir e se reorganizar emocionalmente.
     </p>
 </section>
 
 <section class="caixa">
     <h2>Experiência profissional</h2>
     <p>
-        Possuo ampla experiência com demandas como Transtorno de Ansiedade e suas comorbidades,
-        Depressão, Sobrecarga Emocional, Dificuldades nos Relacionamentos, Autoestima,
-        Autoconhecimento, Autolesão/Automutilação, Estresse Pós-Traumático, Desafios da maternidade,
-        Cuidados Paliativos, entre outros.
+        Possuo ampla experiência com demandas como transtorno de ansiedade e suas comorbidades,
+        depressão, sobrecarga emocional, dificuldades nos relacionamentos, autoestima,
+        autoconhecimento, autolesão/automutilação, estresse pós-traumático,
+        desafios da maternidade, cuidados paliativos, entre outros.
     </p>
 
     <p>
-        Também possuo 2 anos de experiência em atendimento psicológico a pacientes Renais Crônicos
+        Também possuo 2 anos de experiência em atendimento psicológico a pacientes renais crônicos
         e profissionais da área, atuando na clínica do Centro de Nefrologia CNENORTE.
     </p>
 </section>
@@ -201,7 +215,7 @@ footer {
 
 <section class="caixa">
     <h2>Horário de atendimento</h2>
-    <p>Atendo de segunda à sexta, com horários flexíveis.</p>
+    <p>Atendo de segunda à sexta-feira, com horários flexíveis.</p>
 </section>
 
 <section class="caixa">
@@ -209,14 +223,34 @@ footer {
     <p><strong>Agende seu horário diretamente comigo ainda hoje!</strong></p>
 
     <div class="botoes">
-        <a class="whatsapp" href="https://wa.me/5511963116986" target="_blank">WhatsApp</a>
-        <a class="telefone" href="tel:+5511963116986">Telefone</a>
-        <a class="instagram" href="https://www.instagram.com/ellenrodriguespsi12" target="_blank">Instagram</a>
+        <a class="whatsapp" href="https://wa.me/5511963116986" target="_blank">📱 WhatsApp</a>
+        <a class="telefone" href="tel:+5511963116986">📞 Telefone</a>
+        <a class="instagram" href="https://www.instagram.com/ellenrodriguespsi12" target="_blank">📷 Instagram</a>
+    </div>
+</section>
+
+<section class="caixa">
+    <h2>Galeria</h2>
+
+    <div class="galeria">
+        <img src="trabalho1.jpg" alt="Trabalho 1">
+        <img src="trabalho2.jpg" alt="Trabalho 2">
+        <img src="trabalho3.jpg" alt="Trabalho 3">
+        <img src="trabalho4.jpg" alt="Trabalho 4">
+        <img src="trabalho5.jpg" alt="Trabalho 5">
+        <img src="trabalho6.jpg" alt="Trabalho 6">
+        <img src="trabalho7.jpg" alt="Trabalho 7">
+        <img src="trabalho8.jpg" alt="Trabalho 8">
+        <img src="trabalho9.jpg" alt="Trabalho 9">
+        <img src="trabalho10.jpg" alt="Trabalho 10">
+        <img src="trabalho11.jpg" alt="Trabalho 11">
+        <img src="trabalho12.jpg" alt="Trabalho 12">
+        <img src="trabalho13.jpg" alt="Trabalho 13">
     </div>
 </section>
 
 <footer>
-    <p>© Ellen Rodrigues • Psicóloga Clínica • CRP 06/176705</p>
+    © 2026 Ellen Rodrigues - Psicóloga Clínica
 </footer>
 
 </body>
